@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Sustentável - Futuro Verde</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
+  <header class="hero">
+    <h1>🌱 Agro Sustentável</h1>
+    <p>O futuro da agricultura começa com tecnologia + natureza</p>
+  </header>
+
+  <main>
+
+    <section class="card glow">
+      <h2>🌍 Calculadora de Impacto Sustentável</h2>
+
+      <label>Área cultivada (hectares)</label>
+      <input id="area" type="number" placeholder="Ex: 10"/>
+
+      <label>Tipo de cultivo</label>
+      <select id="cultivo">
+        <option value="milho">Milho</option>
+        <option value="soja">Soja</option>
+        <option value="horta">Horta orgânica</option>
+      </select>
+
+      <button onclick="calcularImpacto()">Calcular impacto</button>
+
+      <div id="resultado" class="resultado"></div>
+    </section>
+
+    <section class="card glow">
+      <h2>🌾 Planejador de Plantio</h2>
+
+      <input id="planta" type="text" placeholder="Ex: Tomate"/>
+      <button onclick="adicionarPlanta()">Adicionar</button>
+
+      <ul id="listaPlantio"></ul>
+    </section>
+
+    <section class="card glow">
+      <h2>💧 Temporizador de Irrigação</h2>
+
+      <input id="tempo" type="number" placeholder="Minutos"/>
+      <button onclick="iniciarTimer()">Iniciar</button>
+
+      <div id="timerDisplay">00:00</div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Feito com 💚 para o futuro sustentável</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
