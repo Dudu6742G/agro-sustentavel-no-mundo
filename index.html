@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -6,17 +5,36 @@
   <title>Agro Sustentável - Futuro Verde</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
   <header class="hero">
     <h1>🌱 Agro Sustentável</h1>
     <p>O futuro da agricultura começa com tecnologia + natureza</p>
+
+    <div class="intro-info">
+      <p>
+        A agricultura sustentável busca produzir alimentos de forma eficiente,
+        reduzindo impactos ambientais e preservando os recursos naturais para as próximas gerações.
+      </p>
+    </div>
   </header>
 
   <main>
 
     <section class="card glow">
       <h2>🌍 Calculadora de Impacto Sustentável</h2>
+
+      <p>
+        Esta ferramenta ajuda a estimar o impacto ambiental da sua produção agrícola
+        com base na área cultivada e no tipo de cultivo.
+      </p>
+
+      <ul>
+        <li>🌾 Redução do uso de água</li>
+        <li>🌱 Menor emissão de CO₂</li>
+        <li>🌍 Preservação do solo</li>
+      </ul>
 
       <label>Área cultivada (hectares)</label>
       <input id="area" type="number" placeholder="Ex: 10"/>
@@ -36,6 +54,17 @@
     <section class="card glow">
       <h2>🌾 Planejador de Plantio</h2>
 
+      <p>
+        Planejar o plantio ajuda a aumentar a produtividade e evitar desperdícios.
+        Você pode organizar suas culturas de forma inteligente.
+      </p>
+
+      <ul>
+        <li>📅 Melhor organização da safra</li>
+        <li>🌱 Rotação de culturas</li>
+        <li>💰 Aumento de eficiência produtiva</li>
+      </ul>
+
       <input id="planta" type="text" placeholder="Ex: Tomate"/>
       <button onclick="adicionarPlanta()">Adicionar</button>
 
@@ -45,10 +74,49 @@
     <section class="card glow">
       <h2>💧 Temporizador de Irrigação</h2>
 
+      <p>
+        O uso inteligente da água é essencial para a sustentabilidade agrícola.
+        O temporizador ajuda a evitar desperdícios.
+      </p>
+
+      <ul>
+        <li>💧 Economia de água</li>
+        <li>🌿 Irrigação controlada</li>
+        <li>⚙️ Automação simples</li>
+      </ul>
+
       <input id="tempo" type="number" placeholder="Minutos"/>
       <button onclick="iniciarTimer()">Iniciar</button>
 
       <div id="timerDisplay">00:00</div>
+    </section>
+
+    <section class="card glow">
+      <h2>🌎 Benefícios da Agricultura Sustentável</h2>
+
+      <p>
+        A agricultura sustentável combina tecnologia, consciência ambiental e eficiência produtiva.
+      </p>
+
+      <ul>
+        <li>🌱 Conservação do solo e da biodiversidade</li>
+        <li>💧 Uso responsável da água</li>
+        <li>🌍 Redução do impacto ambiental</li>
+        <li>🍃 Alimentos mais saudáveis</li>
+        <li>🚜 Uso inteligente de tecnologia no campo</li>
+      </ul>
+    </section>
+
+    <section class="card glow">
+      <h2>📊 Práticas Sustentáveis no Campo</h2>
+
+      <ul>
+        <li>🌾 Rotação de culturas</li>
+        <li>🌿 Uso de adubos orgânicos</li>
+        <li>🚜 Agricultura de precisão</li>
+        <li>🐝 Preservação de polinizadores</li>
+        <li>🌳 Reflorestamento de áreas degradadas</li>
+      </ul>
     </section>
 
   </main>
